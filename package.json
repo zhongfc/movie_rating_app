@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "movie_rating_app",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "fc.zhong <fc.zhong@gmail.com>",
@@ -14,8 +14,14 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.15",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-star-rating": "^1.6.1",
+    "vue-swal": "^1.0.0",
+    "vuetify": "^1.5.7"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
