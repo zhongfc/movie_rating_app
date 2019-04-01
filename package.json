@@ -17,11 +17,14 @@
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.15",
+    "chai": "^4.2.0",
+    "selenium-standalone": "^6.16.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vue-star-rating": "^1.6.1",
     "vue-swal": "^1.0.0",
-    "vuetify": "^1.5.7"
+    "vuetify": "^1.5.7",
+    "vuex": "^3.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -56,9 +59,10 @@
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^22.0.4",
     "jest-serializer-vue": "^0.3.0",
-    "nightwatch": "^0.9.12",
+    "nightwatch": "^0.9.21",
     "node-notifier": "^5.1.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",

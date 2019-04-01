@@ -18,43 +18,15 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
   name: 'Movies',
-  data () {
-    return {
-      movies: []
+  computed: {
+    movies () {
+      return this.$store.getters.fetchMovies
     }
   },
   mounted () {
-    this.fetchMovies()
-  },
-  methods: {
-    async fetchMovies () {
-      const token = window.localStorage.getItem('auth')
-      console.log(token)
-      return axios({
-        method: 'get',
-        url: 'http://localhost:3000/movies',
-        headers: {
-          Authorization: `JWT ${token}`,
-          'Content-Type': 'application/json'
-        }
-      })
-        .then((response) => {
-          this.movies = response.data.movies
-          this.current_user = response.data.current_user
-        })
-        .catch(() => {
-        })
-    },
-    reply () {
-      this.message = "I'm doing great.Thank You!"
-    },
-    reset () {
-      this.message = 'Hello there ,how are you this morning?'
-    }
+    this.$store.dispatch('fetchMovies')
   }
 }
 </script>
